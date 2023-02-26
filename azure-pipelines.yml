@@ -6,7 +6,9 @@ trigger:
 - dockerimages
 
 resources:
-- repo: self
+- repo: pool
+ name: New_List
+ vmImage: ubuntu-latest
 
 variables:
   tag: '$(Build.BuildId)'
