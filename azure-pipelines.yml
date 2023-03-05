@@ -10,10 +10,10 @@ pool:
   name: New_List
   vmImage: ubuntu-latest
 
-steps:
 - script:
     sudo apt-get upgrade -y
     sudo apt install maven -y
+steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
