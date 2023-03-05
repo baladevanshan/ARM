@@ -9,7 +9,6 @@ trigger:
 pool:
   name: New_List
   vmImage: ubuntu-latest
-
 - script:
     sudo apt-get upgrade -y
     sudo apt install maven -y
