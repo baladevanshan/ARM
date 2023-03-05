@@ -9,10 +9,10 @@ trigger:
 pool:
   name: New_List
   vmImage: ubuntu-latest
-- script:
-    sudo apt-get upgrade -y
-    sudo apt install maven -y
+
 steps:
+- script:
+    sudo mvn -version
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
